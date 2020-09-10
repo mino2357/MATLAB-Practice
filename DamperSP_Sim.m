@@ -1,5 +1,5 @@
 classdef DamperSP_Sim  < handle
-    % DamperSP_Sim ŒW”‚ªüŒ`‚Èƒoƒl‚ÆüŒ`‚Èƒ_ƒ“ƒp[‚ÌƒVƒ~ƒ…ƒŒ[ƒVƒ‡ƒ“
+    % DamperSP_Sim ä¿‚æ•°ãŒç·šå½¢ãªãƒãƒã¨ç·šå½¢ãªãƒ€ãƒ³ãƒ‘ãƒ¼ã®ã‚·ãƒŸãƒ¥ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³
     
     properties (Constant = false, Access = public)
         % Time
@@ -54,12 +54,12 @@ classdef DamperSP_Sim  < handle
         end
         
         function obj = DamperSP_Sim(k_, c_, A_, omega_, t0_, dt_, T_max_)
-            % DAMPERSPRINGSIMULATION •¨—’è”‚ÌÝ’è
+            % DAMPERSPRINGSIMULATION ç‰©ç†å®šæ•°ã®è¨­å®š
             obj.k     = k_;
             obj.c     = c_;
             obj.A     = A_;
             obj.omega = omega_;
-            % ŽžŠÔŠÖŒW‚ÌÝ’è
+            % æ™‚é–“é–¢ä¿‚ã®è¨­å®š
             obj.dt       = dt_;
             obj.T_max    = T_max_;
             obj.step_num = T_max_ / dt_;
